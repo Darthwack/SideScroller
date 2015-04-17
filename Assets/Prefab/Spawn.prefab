@@ -40,16 +40,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollider: {fileID: 0}
+  camera: {fileID: 0}
   bg: {fileID: 104324, guid: b0fc56aaec4228e44b94c901e90a8c74, type: 2}
-  bgCollider: {fileID: 6110334, guid: b0fc56aaec4228e44b94c901e90a8c74, type: 2}
+  ground: {fileID: 198180, guid: 91933513d0ac1ba419111cde0c6997cf, type: 2}
+  bgCollider: {fileID: 6115050, guid: 0bda0ed2934fbc24a8c27d20fc38c62e, type: 2}
   bgPos: {fileID: 0}
   newPos: {fileID: 456302, guid: b0fc56aaec4228e44b94c901e90a8c74, type: 2}
+  newGroundPos: {fileID: 476438, guid: 91933513d0ac1ba419111cde0c6997cf, type: 2}
   tree: {fileID: 183426, guid: dd2a02d1421bd6c41931b389f1dbb8aa, type: 2}
   rock: {fileID: 182856, guid: 72dca84733eb5584b8bb0e79ac7053d0, type: 2}
   bgList:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  player: {fileID: 199198, guid: 444c0cfdbf3b8d044af0aa0b44273e36, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -10,6 +10,8 @@ public class Background : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//speed -= (.01f * Time.deltaTime);
+		transform.Translate((LevelControl.speed / 2) * Time.deltaTime, 0f, 0f);
 	
 	}
 
@@ -17,7 +19,7 @@ public class Background : MonoBehaviour {
 	{
 		if(other.name == "Player1")
 		{
-			Invoke("DestroySelf", 10);
+			Invoke("DestroySelf", 15);
 		}
 	}
 
