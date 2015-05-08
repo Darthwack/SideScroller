@@ -1,19 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnalyticListener.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\AnalyticListener.cs" Line="13" Column="20" />
-      <File FileName="Assets\Scripts\GameController.cs" Line="28" Column="26" />
-      <File FileName="Assets\Scripts\Cloud.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Coin.cs" Line="1" Column="1" />
-      <File FileName="Assets\Plugins\GoogleAnalyticsV3\GoogleAnalyticsMPV3.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Ground.cs" Line="1" Column="1" />
-      <File FileName="Assets\UIComponents\GUI Scripts\ChangeScene.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Rotate.cs" Line="1" Column="1" />
-      <File FileName="Assets\UIComponents\GUI Scripts\SoundManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UnityAnalyticsIntegration.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LevelControl.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/UIComponents/GUI Scripts/VolumeSlider.cs" Line="16" Column="52" />
+      <File FileName="Assets/MuteSound.cs" Line="34" Column="24" />
+      <File FileName="Assets/Scripts/ChangeHead.cs" Line="16" Column="5" />
+      <File FileName="Assets/UIComponents/GUI Scripts/ChangeScene.cs" Line="7" Column="14" />
+      <File FileName="Assets/UIComponents/GUI Scripts/SoundManager.cs" Line="91" Column="5" />
+      <File FileName="Assets/Scripts/HeadChange.cs" Line="20" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

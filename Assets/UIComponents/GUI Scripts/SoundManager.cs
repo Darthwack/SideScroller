@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 //namespace Completed
 
@@ -7,10 +8,12 @@ using System.Collections;
 	{
 		public AudioSource efxSource;                   //Drag a reference to the audio source which will play the sound effects.
 		public AudioSource musicSource;                 //Drag a reference to the audio source which will play the music.
-		public static SoundManager instance = null;     //Allows other scripts to call functions from SoundManager.             
+		public static SoundManager instance;     //Allows other scripts to call functions from SoundManager.             
 		public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
 		public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
-		public float musicVolume = 0.0f;
+	    public float musicVolume;
+		private Slider slider;
+		public bool mute = false;
 		
 		void Awake ()
 		{
@@ -21,11 +24,31 @@ using System.Collections;
 			//If instance already exists:
 			else if (instance != this)
 				//Destroy this, this enforces our singleton pattern so there can only be one instance of SoundManager.
+				
 				Destroy (gameObject);
 			
 			//Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
 			DontDestroyOnLoad (gameObject);
+
+		slider = GetComponent<Slider>();
+		float getVol = PlayerPrefs.GetFloat("volume");
+		if(getVol == null){
+			Debug.Log("No player pref?");
+			musicVolume = 0.75f;
+			AudioListener.volume = musicVolume;
+
+		}else{
+
+			Debug.Log("player pref!");
+			musicVolume = getVol;
+
+		
+
+
 		}
+		}
+		
+		 
 		
 		
 		//Used to play single sound clips.
@@ -58,9 +81,23 @@ using System.Collections;
 			efxSource.Play();
 		}
 
-//		void Update(){
-//			public void ChangeMusicVolume(musicVolume){
-//
-//			}
-//		}
+		void Update(){
+			
+		}
+		public void ChangeMusicVolume(float sliderValue){
+		musicVolume = sliderValue;
+		AudioListener.volume = sliderValue;
+		PlayerPrefs.SetFloat("volume", sliderValue);
+		//Debug.Log(PlayerPrefs.GetFloat("volume"));
+
+
+		}
+		public void muteSound(bool bl){
+		mute = bl;
+			if(mute){
+			AudioListener.pause = true;
+		}else{
+			AudioListener.pause = false;
+		}
+	}
 	}

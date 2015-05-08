@@ -1,15 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class VolumeSlider : MonoBehaviour {
+public class VolumeSlider : MonoBehaviour 
+{
+	float s;
 
-	// Use this for initialization
-	void Start () {
+
+	Slider slider;
 	
+	void Start()
+	{
+
+		slider = GetComponent<Slider>();
+		slider.value = SoundManager.instance.musicVolume;
+
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void OnGUI()
+	{
+		s = slider.value;
+		SoundManager.instance.ChangeMusicVolume(s);
 	}
+	
+//	void ChangeVolume()
+//	{
+//		s = slider.value;
+//		soundManager.ChangeMusicVolume(s);
+//	}
 }
+

@@ -17,6 +17,7 @@ public class Spawner : MonoBehaviour {
 	public static int l;
 	public GameObject[] bgList;
 	public GameObject player;
+
 	//public Renderer rend;
 
 	// Use this for initialization

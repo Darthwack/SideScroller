@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d558e4bc89f9d0e40857f655d12d3d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 199198, guid: 444c0cfdbf3b8d044af0aa0b44273e36, type: 2}
+  player: {fileID: 105930, guid: 7439634eb22dd426db3e787208f30b6b, type: 2}
 --- !u!1 &319933523
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,11 +664,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerScript: {fileID: 0}
-  player: {fileID: 199198, guid: 444c0cfdbf3b8d044af0aa0b44273e36, type: 2}
   googleAnalytics: {fileID: 2053670245}
   score: 0
   scoreToSubmit: 0
   currentLevel: 
+  headSprite: 2
 --- !u!114 &521077424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1001,7 +1001,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 454284, guid: 7470537d08cebce4eb8e0d12c463f00f, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11454286, guid: 7470537d08cebce4eb8e0d12c463f00f, type: 2}
       propertyPath: layers.Array.data[0]
@@ -1051,7 +1051,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456302, guid: b0fc56aaec4228e44b94c901e90a8c74, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 104324, guid: b0fc56aaec4228e44b94c901e90a8c74, type: 2}
       propertyPath: m_Name
@@ -1223,12 +1223,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 429364, guid: 3302831a2c1d9fa44a94f464f3db9854, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11466900, guid: 3302831a2c1d9fa44a94f464f3db9854, type: 2}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11466900, guid: 3302831a2c1d9fa44a94f464f3db9854, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 105930, guid: 7439634eb22dd426db3e787208f30b6b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3302831a2c1d9fa44a94f464f3db9854, type: 2}
   m_IsPrefabParent: 0
@@ -2044,7 +2048,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4548fbb5d8ac01a46b0c1df4b3ce149d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &2053670245
+--- !u!114 &2053670245 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400000, guid: eb5b47b08880548c795ced5f38c9e001,
     type: 2}
