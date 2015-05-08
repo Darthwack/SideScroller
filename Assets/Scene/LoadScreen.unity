@@ -133,6 +133,9 @@ MonoBehaviour:
   scoreToSubmit: 0
   currentLevel: 
   headSprite: 
+  panel: {fileID: 0}
+  canvas: {fileID: 543413059}
+  obj: []
 --- !u!4 &17887673
 Transform:
   m_ObjectHideFlags: 0
@@ -1144,7 +1147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &594120500
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2344,6 +2347,7 @@ GameObject:
   - 222: {fileID: 1187094015}
   - 114: {fileID: 1187094014}
   - 114: {fileID: 1187094013}
+  - 114: {fileID: 1187094016}
   m_Layer: 5
   m_Name: Faces
   m_TagString: Untagged
@@ -2408,12 +2412,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 17887674}
-        m_MethodName: TogglePanel
-        m_Mode: 2
+      - m_Target: {fileID: 1187094016}
+        m_MethodName: ToggleFaces
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 594120499}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine, Version=0.0.0.0,
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
             Culture=neutral, PublicKeyToken=null
           m_IntArgument: 1
           m_FloatArgument: 0
@@ -2449,6 +2453,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1187094011}
+--- !u!114 &1187094016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1187094011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ef66f1245804eb7bcdf0e61ca29126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1245356569
 GameObject:
   m_ObjectHideFlags: 0

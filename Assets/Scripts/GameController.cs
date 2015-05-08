@@ -12,12 +12,21 @@ public class GameController : MonoBehaviour {
 	public float score;
 	public long scoreToSubmit;
 	public string currentLevel;
-
 	public string headSprite;
+	public GameObject panel;
+	//public Canvas canvas;
+	//public GameObject[] obj;
+	bool includeInactive = true;
 
 	// Use this for initialization
 	void Awake () 
 	{
+
+	
+			
+		 
+		panel = GameObject.Find("Panel");
+		panel.SetActive(false);
 		if(controll == null)
 		{
 			DontDestroyOnLoad(gameObject);
@@ -65,6 +74,14 @@ public class GameController : MonoBehaviour {
 	public string getHead()
 	{
 		return headSprite;
+	}
+	public void togglePanel(){
+
+		Debug.Log(panel.name);
+		panel.SetActive (!panel.activeSelf);
+	}
+	public void cleanUp(){
+		panel.SetActive(true);
 	}
 
 

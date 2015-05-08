@@ -108,17 +108,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: .0689999983, y: .240999997, z: 1000}
+        value: {x: .0689999983, y: .240999997, z: 0}
         inSlope: {x: Infinity, y: Infinity, z: Infinity}
         outSlope: {x: Infinity, y: Infinity, z: Infinity}
         tangentMode: 0
       - time: .166666672
-        value: {x: .119999997, y: .187999994, z: 1000}
+        value: {x: .119999997, y: .187999994, z: 0}
         inSlope: {x: Infinity, y: Infinity, z: Infinity}
         outSlope: {x: Infinity, y: Infinity, z: Infinity}
         tangentMode: 0
       - time: 1.25
-        value: {x: .119999997, y: .201000005, z: 1000}
+        value: {x: .119999997, y: .201000005, z: 0}
         inSlope: {x: Infinity, y: Infinity, z: Infinity}
         outSlope: {x: Infinity, y: Infinity, z: Infinity}
         tangentMode: 0
@@ -238,17 +238,17 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 1000
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 31
       - time: .166666672
-        value: 1000
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 31
       - time: 1.25
-        value: 1000
+        value: 0
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 31

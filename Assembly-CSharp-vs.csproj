@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\TogglePanelButton.cs" />
      <Compile Include="Assets\Scripts\UnityAnalyticsIntegration.cs" />
+     <Compile Include="Assets\TogglePanel.cs" />
      <Compile Include="Assets\UIComponents\GUI Scripts\ChangeScene.cs" />
      <Compile Include="Assets\UIComponents\GUI Scripts\SoundManager.cs" />
      <Compile Include="Assets\UIComponents\GUI Scripts\VolumeSlider.cs" />
