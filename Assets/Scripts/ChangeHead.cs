@@ -12,6 +12,7 @@ public class ChangeHead : MonoBehaviour {
 	{
 		headName = GameController.controll.getHead();
 		head = Resources.Load<Sprite>(headName) as Sprite;
+		Debug.Log(head.name);
 		GetComponent<SpriteRenderer>().sprite = head;
 
 	}

@@ -39,7 +39,7 @@ using UnityEngine.UI;
 
 		}else{
 
-			Debug.Log("player pref!");
+			//Debug.Log("player pref!");
 			musicVolume = getVol;
 
 		

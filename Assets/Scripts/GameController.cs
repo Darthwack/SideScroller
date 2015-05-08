@@ -29,7 +29,10 @@ public class GameController : MonoBehaviour {
 		//currentLevel = Application.loadedLevelName;
 		Screen.orientation = ScreenOrientation.LandscapeLeft;
 		//playerScript = GetComponent<PlayerScript>();
-
+		string head = PlayerPrefs.GetString("head");
+		if(head != null){
+			setHead(head);
+		}
 	}
 	
 	// Update is called once per frame
@@ -47,16 +50,17 @@ public class GameController : MonoBehaviour {
 			scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
 			scoreText.text = "Score: " + score;
 		}
-		
+
 
 
 		
 
 	}
 
-	public void setHead(string headName){
+	public void setHead(string headName)
+	{
 		headSprite = headName;
-		Debug.Log(headSprite);
+		//Debug.Log(headSprite);
 	}
 	public string getHead()
 	{

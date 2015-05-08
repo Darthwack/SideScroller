@@ -1,14 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ChangeHead.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/UIComponents/GUI Scripts/VolumeSlider.cs" Line="16" Column="52" />
-      <File FileName="Assets/MuteSound.cs" Line="34" Column="24" />
-      <File FileName="Assets/Scripts/ChangeHead.cs" Line="16" Column="5" />
-      <File FileName="Assets/UIComponents/GUI Scripts/ChangeScene.cs" Line="7" Column="14" />
-      <File FileName="Assets/UIComponents/GUI Scripts/SoundManager.cs" Line="91" Column="5" />
-      <File FileName="Assets/Scripts/HeadChange.cs" Line="20" Column="37" />
+      <File FileName="Assets/Scripts/ChangeHead.cs" Line="22" Column="2" />
+      <File FileName="Assets/Scripts/HeadChange.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -12,7 +12,7 @@ public class VolumeSlider : MonoBehaviour
 	void Start()
 	{
 
-		slider = GetComponent<Slider>();
+		slider = GameObject.Find("Volume").GetComponent<UnityEngine.UI.Slider>();
 		slider.value = SoundManager.instance.musicVolume;
 
 	}

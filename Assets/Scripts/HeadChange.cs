@@ -24,5 +24,6 @@ public class HeadChange : MonoBehaviour {
 	{
 		headText = head.GetComponentInChildren<Text>().text;
 		GameController.controll.setHead(headText);
+		PlayerPrefs.SetString("head",headText);
 	}
 }
