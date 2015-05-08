@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d558e4bc89f9d0e40857f655d12d3d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 105930, guid: 7439634eb22dd426db3e787208f30b6b, type: 2}
+  player: {fileID: 115108, guid: 3a5b0b40cd73a451ca27a87ffad8e9c4, type: 2}
 --- !u!1 &319933523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1232,7 @@ Prefab:
     - target: {fileID: 11466900, guid: 3302831a2c1d9fa44a94f464f3db9854, type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 105930, guid: 7439634eb22dd426db3e787208f30b6b, type: 2}
+      objectReference: {fileID: 115108, guid: 3a5b0b40cd73a451ca27a87ffad8e9c4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3302831a2c1d9fa44a94f464f3db9854, type: 2}
   m_IsPrefabParent: 0
